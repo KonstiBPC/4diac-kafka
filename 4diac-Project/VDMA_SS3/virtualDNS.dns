@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtualDNS:VirtualDNSManagement xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:virtualDNS="org.eclipse.fordiac.ide.virtualDNS" activeVirtualDNS="//@availableDNSCollections.0">
+  <availableDNSCollections name="Config_Kafka">
+    <virtualDNSEntries name="CAP_REQUIRED" value="&quot;fbdk[].kafka[localhost:9092,CAP_REQUIRED]&quot;"/>
+    <virtualDNSEntries name="DESIRED_COLOR_CAP_NOT_AVAILABLE" value="&quot;fbdk[].kafka[localhost:9092,DESIRED_COLOR_CAP_NOT_AVAILABLE]&quot;"/>
+    <virtualDNSEntries name="MORE_CAPS_AVAILABLE" value="&quot;fbdk[].kafka[localhost:9092,MORE_CAPS_AVAILABLE]&quot;"/>
+    <virtualDNSEntries name="WRONG_CAP_ORIENTATION" value="&quot;fbdk[].kafka[localhost:9092,WRONG_CAP_ORIENTATION]&quot;"/>
+    <virtualDNSEntries name="CAPS_FLIPPED" value="&quot;fbdk[].kafka[localhost:9092,CAPS_FLIPPED]&quot;"/>
+    <virtualDNSEntries name="CAP_NOT_REACHABLE" value="&quot;fbdk[].kafka[localhost:9092,CAP_NOT_REACHABLE]&quot;"/>
+    <virtualDNSEntries name="CAPS_REACHABLE_NOW" value="&quot;fbdk[].kafka[localhost:9092,CAPS_REACHABLE_NOW]&quot;"/>
+    <virtualDNSEntries name="PICK_CAP" value="&quot;fbdk[].kafka[localhost:9092,PICK_CAP]&quot;"/>
+  </availableDNSCollections>
+  <availableDNSCollections name="Config_UDP"/>
+</virtualDNS:VirtualDNSManagement>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FBType Name="FB_Detect_VarChange" Comment="Simple FB with one algorithm">
+	<Identification Standard="61499-1">
+	</Identification>
+	<VersionInfo Version="1.0" Author="AK121668" Date="2021-08-03">
+	</VersionInfo>
+	<InterfaceList>
+		<EventInputs>
+			<Event Name="REQ" Type="Event" Comment="Normal Execution Request">
+				<With Var="IN_Var"/>
+			</Event>
+		</EventInputs>
+		<EventOutputs>
+			<Event Name="CNF" Type="Event" Comment="Execution Confirmation">
+				<With Var="OUT_Var"/>
+				<With Var="Changed"/>
+			</Event>
+		</EventOutputs>
+		<InputVars>
+			<VarDeclaration Name="IN_Var" Type="USINT" Comment=""/>
+		</InputVars>
+		<OutputVars>
+			<VarDeclaration Name="OUT_Var" Type="USINT" Comment=""/>
+			<VarDeclaration Name="Changed" Type="BOOL" Comment=""/>
+		</OutputVars>
+	</InterfaceList>
+	<SimpleFB>
+		<InternalVars>
+			<VarDeclaration Name="iValue_Changed" Type="BOOL" Comment=""/>
+		</InternalVars>
+		<Algorithm Name="REQ" Comment="">
+			<ST><![CDATA[IF OUT_Var <> IN_Var THEN
+	iValue_Changed := TRUE;
+	OUT_Var := IN_Var;
+END_IF;
+
+Changed := iValue_Changed;
+
+IF OUT_Var = IN_Var THEN
+	iValue_Changed := FALSE;
+END_IF;
+]]></ST>
+		</Algorithm>
+	</SimpleFB>
+</FBType>

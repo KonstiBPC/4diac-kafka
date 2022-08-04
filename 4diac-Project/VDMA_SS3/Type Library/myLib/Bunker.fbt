@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FBType Name="Bunker" Comment="Basic FB with empty ECC">
+	<Identification Standard="61499-2">
+	</Identification>
+	<VersionInfo Version="1.0" Author="AK121668" Date="2021-08-03">
+	</VersionInfo>
+	<InterfaceList>
+		<EventInputs>
+			<Event Name="DESIRED_COLOUR_CAP_NOT_AVAILABLE" Type="Event" Comment="start feeding bunker">
+			</Event>
+		</EventInputs>
+		<EventOutputs>
+			<Event Name="MORE_CAPS_AVAILABLE" Type="Event" Comment="feeding is DONE">
+				<With Var="Status"/>
+			</Event>
+		</EventOutputs>
+		<OutputVars>
+			<VarDeclaration Name="Status" Type="STRING" Comment="Current Status of Bunker"/>
+		</OutputVars>
+		<Plugs>
+			<AdapterDeclaration Name="Timer" Type="ARTimeOut" Comment=""/>
+		</Plugs>
+	</InterfaceList>
+	<BasicFB>
+		<ECC>
+			<ECState Name="START" Comment="Initial State" x="1706.6666666666667" y="1293.3333333333335">
+			</ECState>
+			<ECState Name="s_feed" Comment="" x="3706.666666666667" y="1393.3333333333335">
+				<ECAction Algorithm="alg_feeding" Output="Timer.START"/>
+			</ECState>
+			<ECState Name="State" Comment="" x="3146.666666666667" y="2153.3333333333335">
+				<ECAction Algorithm="alg_feed_done" Output="MORE_CAPS_AVAILABLE"/>
+			</ECState>
+			<ECState Name="s_init" Comment="" x="2686.666666666667" y="753.3333333333334">
+				<ECAction Algorithm="alg_init"/>
+			</ECState>
+			<ECTransition Source="s_feed" Destination="State" Condition="Timer.TimeOut" Comment="" x="3766.666666666667" y="1813.3333333333335"/>
+			<ECTransition Source="State" Destination="START" Condition="1" Comment="" x="2293.3333333333335" y="1933.3333333333335"/>
+			<ECTransition Source="START" Destination="s_init" Condition="DESIRED_COLOUR_CAP_NOT_AVAILABLE" Comment="" x="2233.3333333333335" y="1080.0"/>
+			<ECTransition Source="s_init" Destination="s_feed" Condition="1" Comment="" x="3626.666666666667" y="1053.3333333333335"/>
+		</ECC>
+		<Algorithm Name="alg_init" Comment="">
+			<ST><![CDATA[ALGORITHM alg_init
+Timer.DT := T#10s;
+Status :='init mode';
+END_ALGORITHM]]></ST>
+		</Algorithm>
+		<Algorithm Name="alg_feeding" Comment="">
+			<ST><![CDATA[
+
+ALGORITHM alg_feeding
+Status :='feeding now';
+END_ALGORITHM]]></ST>
+		</Algorithm>
+		<Algorithm Name="alg_feed_done" Comment="">
+			<ST><![CDATA[
+
+ALGORITHM alg_feed_done
+Status :='feeding Done';
+END_ALGORITHM]]></ST>
+		</Algorithm>
+	</BasicFB>
+</FBType>

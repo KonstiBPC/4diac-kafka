@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FBType Name="Vibrator" Comment="Basic FB with empty ECC">
+	<Identification Standard="61499-2">
+	</Identification>
+	<VersionInfo Version="1.0" Author="AK121668" Date="2021-08-04">
+	</VersionInfo>
+	<InterfaceList>
+		<EventInputs>
+			<Event Name="WRONG_CAP_ORIENTATION" Type="Event" Comment="">
+			</Event>
+			<Event Name="CAP_NOT_REACHABLE" Type="Event" Comment="">
+			</Event>
+		</EventInputs>
+		<EventOutputs>
+			<Event Name="CAPS_FLIPPED" Type="Event" Comment="">
+				<With Var="Status"/>
+			</Event>
+			<Event Name="CAPS_REACHABLE" Type="Event" Comment="">
+				<With Var="Status"/>
+			</Event>
+		</EventOutputs>
+		<OutputVars>
+			<VarDeclaration Name="Status" Type="STRING" Comment=""/>
+		</OutputVars>
+		<Plugs>
+			<AdapterDeclaration Name="Timer" Type="ARTimeOut" Comment=""/>
+		</Plugs>
+	</InterfaceList>
+	<BasicFB>
+		<ECC>
+			<ECState Name="START" Comment="Initial State" x="1286.6666666666667" y="906.6666666666667">
+			</ECState>
+			<ECState Name="s_Flip" Comment="" x="3560.0" y="366.6666666666667">
+				<ECAction Algorithm="alg_flip_init"/>
+				<ECAction Algorithm="alg_flip" Output="Timer.START"/>
+			</ECState>
+			<ECState Name="s_Separate" Comment="" x="1686.6666666666667" y="3166.666666666667">
+				<ECAction Algorithm="alg_separate_init"/>
+				<ECAction Algorithm="alg_separate" Output="Timer.START"/>
+			</ECState>
+			<ECState Name="s_Flip_done" Comment="" x="4020.0" y="1406.6666666666667">
+				<ECAction Algorithm="alg_flip_exit" Output="CAPS_FLIPPED"/>
+			</ECState>
+			<ECState Name="s_Seperate_done" Comment="" x="3486.666666666667" y="2373.3333333333335">
+				<ECAction Algorithm="alg_separate_exit" Output="CAPS_REACHABLE"/>
+			</ECState>
+			<ECTransition Source="START" Destination="s_Flip" Condition="WRONG_CAP_ORIENTATION" Comment="" x="2326.666666666667" y="866.6666666666667"/>
+			<ECTransition Source="START" Destination="s_Separate" Condition="CAP_NOT_REACHABLE" Comment="" x="2040.0" y="2046.6666666666667"/>
+			<ECTransition Source="s_Flip" Destination="s_Flip_done" Condition="Timer.TimeOut" Comment="" x="3880.0" y="893.3333333333334"/>
+			<ECTransition Source="s_Flip_done" Destination="START" Condition="1" Comment="" x="2800.0" y="1246.6666666666667"/>
+			<ECTransition Source="s_Separate" Destination="s_Seperate_done" Condition="Timer.TimeOut" Comment="" x="2786.666666666667" y="2833.3333333333335"/>
+			<ECTransition Source="s_Seperate_done" Destination="START" Condition="1" Comment="" x="2560.0" y="1713.3333333333335"/>
+		</ECC>
+		<Method Name="LOST_AND_FOUND_0" Type="" Comment="// lost+found 0">
+			<ST><![CDATA[//ALGORITHM alg_flip_init
+Timer.DT := T#10s;
+Status := "init";
+//END_ALGORITHM//ALGORITHM alg_flip
+Status := "flipping";
+//END_ALGORITHM//ALGORITHM alg_flip_exit
+Status := "flipping Done";
+//END_ALGORITHM//ALGORITHM alg_separate_init
+Timer.DT := T#10s;
+Status := "init";
+//END_ALGORITHM//ALGORITHM alg_separate
+Status := "seperating";
+//END_ALGORITHM//ALGORITHM alg_separate_exit
+Status := "seperating Done";
+//END_ALGORITHM
+
+]]></ST>
+		</Method>
+	</BasicFB>
+</FBType>

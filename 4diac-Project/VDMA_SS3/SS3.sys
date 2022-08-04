@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System Name="SS3" Comment="">
+	<VersionInfo Version="1.0" Author="AK121668" Date="2022-06-24">
+	</VersionInfo>
+	<Application Name="SS3_default" Comment="">
+		<SubAppNetwork>
+			<FB Name="SUB_WRONG_CAP_ORIENTATION" Type="SUBSCRIBE_0" Comment="" x="666.6666666666667" y="146.66666666666669">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,WRONG_CAP_ORIENTATION]&quot;"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group03"/>
+			</FB>
+			<FB Name="PUB_CAPS_IN_REACHABLE_AREA" Type="PUBLISH_0" Comment="" x="3966.666666666667" y="1386.6666666666667">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAPS_IN_REACHABLE_AREA]&quot;"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group03"/>
+			</FB>
+			<FB Name="SUB_CAP_NOT_REACHABLE" Type="SUBSCRIBE_0" Comment="" x="806.6666666666667" y="1293.3333333333335">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAP_NOT_REACHABLE]&quot;"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group03"/>
+			</FB>
+			<FB Name="PUB_CAP_REQUIRED" Type="PUBLISH_1" Comment="" x="4220.0" y="0.0">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAP_REQUIRED]&quot;"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group04"/>
+			</FB>
+			<FB Name="PUB_MORE_CAPS_AVAILABLE" Type="PUBLISH_0" Comment="" x="4126.666666666667" y="126.66666666666667">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,MORE_CAPS_AVAILABLE]&quot;"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group02"/>
+			</FB>
+			<FB Name="PUB_CAPS_FLIPPED" Type="PUBLISH_0" Comment="" x="4306.666666666667" y="340.0">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAPS_FLIPPED]&quot;"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group03"/>
+			</FB>
+			<FB Name="PUB_PICK_CAP" Type="PUBLISH_3" Comment="" x="5100.0" y="2946.666666666667">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,PICK_CAP]&quot;"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group01"/>
+			</FB>
+			<FB Name="PUB_CAP_NOT_REACHABLE" Type="PUBLISH_0" Comment="" x="4806.666666666667" y="1973.3333333333335">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAP_NOT_REACHABLE]&quot;"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group01"/>
+			</FB>
+			<FB Name="PUB_WRONG_CAP_ORIENTATION" Type="PUBLISH_0" Comment="" x="4673.333333333334" y="986.6666666666667">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,WRONG_CAP_ORIENTATION]&quot;"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group01"/>
+			</FB>
+			<FB Name="PUB_CAP_NOT_AVAILABLE" Type="PUBLISH_0" Comment="" x="4853.333333333334" y="60.0">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,DESIRED_COLOR_CAP_NOT_AVAILABLE]&quot;"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group01"/>
+			</FB>
+			<FB Name="SUB_CAPS_FLIPPED" Type="SUBSCRIBE_0" Comment="" x="966.6666666666667" y="2073.3333333333335">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAPS_FLIPPED]&quot;"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group01"/>
+			</FB>
+			<FB Name="SUB_CAPS_REACHABLE_NOW" Type="SUBSCRIBE_0" Comment="" x="766.6666666666667" y="3006.666666666667">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAPS_IN_REACHABLE_AREA]&quot;"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group01"/>
+			</FB>
+			<FB Name="SUB_CAP_REQUIRED" Type="SUBSCRIBE_1" Comment="" x="966.6666666666667" y="13.333333333333334">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAP_REQUIRED]&quot;"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group01"/>
+			</FB>
+			<FB Name="SUB_MORE_CAPS_AVAILABLE" Type="SUBSCRIBE_0" Comment="" x="733.3333333333334" y="1080.0">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,MORE_CAPS_AVAILABLE]&quot;"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group01"/>
+			</FB>
+			<FB Name="SUB_CAP_NOT_AVAILABLE" Type="SUBSCRIBE_0" Comment="" x="806.6666666666667" y="33.333333333333336">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,DESIRED_COLOR_CAP_NOT_AVAILABLE]&quot;"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group02"/>
+			</FB>
+			<FB Name="E_RTimeOut" Type="E_RTimeOut" Comment="" x="2340.0" y="866.6666666666667">
+				<Attribute Name="GroupName" Type="STRING" Value="__Group02"/>
+			</FB>
+			<FB Name="E_RTimeOut_1" Type="E_RTimeOut" Comment="" x="2506.666666666667" y="1286.6666666666667">
+				<Attribute Name="GroupName" Type="STRING" Value="__Group03"/>
+			</FB>
+			<Group Name="__Group01" Comment="Camera" x="3200.0" y="5460.0" width="6466.666666666667" height="4580.0">
+			</Group>
+			<Group Name="__Group02" Comment="Bunker" x="9706.666666666668" y="5486.666666666667" width="5773.333333333334" height="1620.0">
+			</Group>
+			<Group Name="__Group03" Comment="Vibrator" x="9706.666666666668" y="7340.0" width="5820.0" height="2666.666666666667">
+			</Group>
+			<SubApp Name="SubApp" Comment="" x="733.3333333333334" y="60.0">
+				<SubAppInterfaceList>
+					<SubAppEventInputs>
+						<SubAppEvent Name="REQ" Type="Event" Comment="">
+						</SubAppEvent>
+						<SubAppEvent Name="RESET" Type="Event" Comment="">
+						</SubAppEvent>
+					</SubAppEventInputs>
+					<SubAppEventOutputs>
+						<SubAppEvent Name="CNF" Type="Event" Comment="">
+						</SubAppEvent>
+					</SubAppEventOutputs>
+					<InputVars>
+						<VarDeclaration Name="Name" Type="STRING" Comment="" InitialValue="'MySpinner'"/>
+						<VarDeclaration Name="ID" Type="INT" Comment="" InitialValue="1512"/>
+						<VarDeclaration Name="Colour" Type="STRING" Comment="" InitialValue="'red'"/>
+						<VarDeclaration Name="Current_Pos" Type="INT" Comment="" InitialValue="3"/>
+					</InputVars>
+					<OutputVars>
+						<VarDeclaration Name="Colour_Req" Type="STRING" Comment=""/>
+					</OutputVars>
+				</SubAppInterfaceList>
+				<SubAppNetwork>
+					<FB Name="colour" Type="STRING2STRING" Comment="" x="1000.0" y="2133.3333333333335">
+						<Parameter Name="IN" Value="'red'"/>
+					</FB>
+					<FB Name="id" Type="INT2INT" Comment="" x="1133.3333333333335" y="1333.3333333333335">
+					</FB>
+					<FB Name="name" Type="STRING2STRING" Comment="" x="1000.0" y="533.3333333333334">
+					</FB>
+					<FB Name="pos" Type="INT2INT" Comment="" x="1133.3333333333335" y="2933.3333333333335">
+					</FB>
+					<FB Name="F_EQ" Type="F_EQ" Comment="" x="4200.0" y="1466.6666666666667">
+						<Parameter Name="IN1" Value="INT#3"/>
+					</FB>
+					<FB Name="E_REND" Type="E_REND" Comment="" x="7080.0" y="720.0">
+					</FB>
+					<FB Name="E_SELECT" Type="E_SELECT" Comment="" x="5513.333333333334" y="1460.0">
+					</FB>
+					<EventConnections>
+						<Connection Source="id.CNF" Destination="colour.REQ" Comment="" dx1="80.0" dx2="80.0" dy="400.0"/>
+						<Connection Source="colour.CNF" Destination="pos.REQ" Comment="" dx1="80.0" dx2="80.0" dy="400.0"/>
+						<Connection Source="name.CNF" Destination="id.REQ" Comment="" dx1="80.0" dx2="80.0" dy="400.0"/>
+						<Connection Source="REQ" Destination="name.REQ" Comment="" dx1="1166.6666666666667"/>
+						<Connection Source="E_REND.EO" Destination="CNF" Comment="" dx1="1313.3333333333335"/>
+						<Connection Source="pos.CNF" Destination="E_REND.EI1" Comment="" dx1="1793.3333333333335"/>
+						<Connection Source="RESET" Destination="E_REND.R" Comment="" dx1="3400.0"/>
+						<Connection Source="pos.CNF" Destination="F_EQ.REQ" Comment="" dx1="1153.3333333333335"/>
+						<Connection Source="F_EQ.CNF" Destination="E_SELECT.EI1" Comment="" dx1="680.0"/>
+						<Connection Source="E_SELECT.EO" Destination="E_REND.EI2" Comment="" dx1="126.66666666666667"/>
+					</EventConnections>
+					<DataConnections>
+						<Connection Source="pos.OUT" Destination="F_EQ.IN2" Comment="" dx1="1466.6666666666667"/>
+						<Connection Source="Name" Destination="name.IN" Comment="" dx1="1166.6666666666667"/>
+						<Connection Source="ID" Destination="id.IN" Comment="" dx1="1233.3333333333335"/>
+						<Connection Source="Colour" Destination="colour.IN" Comment="" dx1="1166.6666666666667"/>
+						<Connection Source="Current_Pos" Destination="pos.IN" Comment="" dx1="1233.3333333333335"/>
+						<Connection Source="colour.OUT" Destination="Colour_Req" Comment="" dx1="2246.666666666667"/>
+						<Connection Source="F_EQ.OUT" Destination="E_SELECT.G" Comment="" dx1="680.0"/>
+					</DataConnections>
+				</SubAppNetwork>
+				<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+				<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+				<Attribute Name="GroupName" Type="STRING" Value="__Group04"/>
+			</SubApp>
+			<Group Name="__Group04" Comment="Product" x="3200.0" y="3740.0" width="5420.0" height="1666.6666666666667">
+			</Group>
+			<FB Name="Bunker" Type="Bunker" Comment="" x="2193.3333333333335" y="73.33333333333334">
+				<Attribute Name="GroupName" Type="STRING" Value="__Group02"/>
+			</FB>
+			<FB Name="Vibrator" Type="Vibrator" Comment="" x="2133.3333333333335" y="193.33333333333334">
+				<Attribute Name="GroupName" Type="STRING" Value="__Group03"/>
+			</FB>
+			<FB Name="Camera" Type="Camera" Comment="" x="2273.3333333333335" y="93.33333333333334">
+				<Attribute Name="GroupName" Type="STRING" Value="__Group01"/>
+			</FB>
+			<FB Name="Camera_1" Type="Camera" Comment="" x="5200.0" y="14266.666666666668">
+			</FB>
+			<FB Name="Bunker_1" Type="Bunker" Comment="" x="9866.666666666668" y="13866.666666666668">
+			</FB>
+			<FB Name="Vibrator_1" Type="Vibrator" Comment="" x="9866.666666666668" y="15866.666666666668">
+			</FB>
+			<EventConnections>
+				<Connection Source="SubApp.CNF" Destination="PUB_CAP_REQUIRED.REQ" Comment="" dx1="1486.6666666666667"/>
+				<Connection Source="SUB_CAP_NOT_AVAILABLE.IND" Destination="Bunker.DESIRED_COLOUR_CAP_NOT_AVAILABLE" Comment="" dx1="86.66666666666667"/>
+				<Connection Source="Bunker.MORE_CAPS_AVAILABLE" Destination="PUB_MORE_CAPS_AVAILABLE.REQ" Comment="" dx1="313.33333333333337"/>
+				<Connection Source="SUB_WRONG_CAP_ORIENTATION.IND" Destination="Vibrator.WRONG_CAP_ORIENTATION" Comment="" dx1="80.0" dx2="80.0" dy="160.0"/>
+				<Connection Source="SUB_CAP_NOT_REACHABLE.IND" Destination="Vibrator.CAP_NOT_REACHABLE" Comment="" dx1="80.0" dx2="80.0" dy="-546.6666666666667"/>
+				<Connection Source="Vibrator.CAPS_FLIPPED" Destination="PUB_CAPS_FLIPPED.REQ" Comment="" dx1="320.0"/>
+				<Connection Source="Vibrator.CAPS_REACHABLE" Destination="PUB_CAPS_IN_REACHABLE_AREA.REQ" Comment="" dx1="280.0"/>
+				<Connection Source="SUB_CAP_REQUIRED.IND" Destination="Camera.CAP_REQUIRED" Comment="" dx1="180.0"/>
+				<Connection Source="SUB_MORE_CAPS_AVAILABLE.IND" Destination="Camera.BUNKER_FEED_CAPS" Comment="" dx1="180.0"/>
+				<Connection Source="SUB_CAPS_FLIPPED.IND" Destination="Camera.VIBRATOR_ORIENTED_CORRECT" Comment="" dx1="180.0"/>
+				<Connection Source="SUB_CAPS_REACHABLE_NOW.IND" Destination="Camera.VIBRATOR_CAP_REACHABLE" Comment="" dx1="180.0"/>
+				<Connection Source="Camera.DESIRED_COLOR_CAP_NOT_AVAILABLE" Destination="PUB_CAP_NOT_AVAILABLE.REQ" Comment="" dx1="513.3333333333334"/>
+				<Connection Source="Camera.WRONG_CAP_ORIENTATION" Destination="PUB_WRONG_CAP_ORIENTATION.REQ" Comment="" dx1="733.3333333333334"/>
+				<Connection Source="Camera.CAP_NOT_REACHANBLE" Destination="PUB_CAP_NOT_REACHABLE.REQ" Comment="" dx1="733.3333333333334"/>
+				<Connection Source="Camera.CAP_RECHANBLE" Destination="PUB_PICK_CAP.REQ" Comment="" dx1="733.3333333333334"/>
+			</EventConnections>
+			<DataConnections>
+				<Connection Source="SubApp.Colour_Req" Destination="PUB_CAP_REQUIRED.SD_1" Comment="" dx1="580.0"/>
+				<Connection Source="SUB_CAP_REQUIRED.RD_1" Destination="Camera.Product_Color" Comment="" dx1="180.0"/>
+				<Connection Source="Camera.Pick_Pos_X" Destination="PUB_PICK_CAP.SD_1" Comment="" dx1="733.3333333333334"/>
+				<Connection Source="Camera.Pick_Pos_Y" Destination="PUB_PICK_CAP.SD_2" Comment="" dx1="733.3333333333334"/>
+				<Connection Source="Camera.Pick_Pos_Z" Destination="PUB_PICK_CAP.SD_3" Comment="" dx1="733.3333333333334"/>
+			</DataConnections>
+			<AdapterConnections>
+				<Connection Source="Bunker.Timer" Destination="E_RTimeOut.TimeOutSocket" Comment="" dx1="80.0" dx2="80.0" dy="120.0"/>
+				<Connection Source="Vibrator.Timer" Destination="E_RTimeOut_1.TimeOutSocket" Comment="" dx1="80.0" dx2="80.0" dy="313.33333333333337"/>
+			</AdapterConnections>
+		</SubAppNetwork>
+	</Application>
+	<Device Name="FORTE_PC" Type="FORTE_PC" Comment="" x="2966.666666666667" y="613.3333333333334">
+		<Parameter Name="MGR_ID" Value="&quot;localhost:61499&quot;"/>
+		<Attribute Name="Profile" Type="STRING" Value="HOLOBLOC"/>
+		<Attribute Name="Color" Type="STRING" Value="255,190,111"/>
+		<Resource Name="EMB_RES" Type="EMB_RES" Comment="" x="0.0" y="0.0">
+			<FBNetwork>
+				<FB Name="SUB_CAP_NOT_AVAILABLE" Type="SUBSCRIBE_0" Comment="" x="9266.666666666668" y="-953.3333333333334">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,DESIRED_COLOR_CAP_NOT_AVAILABLE]&quot;"/>
+				</FB>
+				<FB Name="SUB_CAPS_REACHABLE_NOW" Type="SUBSCRIBE_0" Comment="" x="813.3333333333334" y="5280.0">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAPS_IN_REACHABLE_AREA]&quot;"/>
+				</FB>
+				<FB Name="PUB_MORE_CAPS_AVAILABLE" Type="PUBLISH_0" Comment="" x="15460.0" y="-1193.3333333333335">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,MORE_CAPS_AVAILABLE]&quot;"/>
+				</FB>
+				<FB Name="PUB_CAPS_IN_REACHABLE_AREA" Type="PUBLISH_0" Comment="" x="15653.333333333334" y="5293.333333333334">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAPS_IN_REACHABLE_AREA]&quot;"/>
+				</FB>
+				<FB Name="SUB_CAP_REQUIRED" Type="SUBSCRIBE_1" Comment="" x="1093.3333333333335" y="1793.3333333333335">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAP_REQUIRED]&quot;"/>
+				</FB>
+				<FB Name="SUB_CAP_NOT_REACHABLE" Type="SUBSCRIBE_0" Comment="" x="10133.333333333334" y="5200.0">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAP_NOT_REACHABLE]&quot;"/>
+				</FB>
+				<FB Name="E_RTimeOut" Type="E_RTimeOut" Comment="" x="12840.0" y="346.6666666666667">
+				</FB>
+				<FB Name="E_RTimeOut_1" Type="E_RTimeOut" Comment="" x="12666.666666666668" y="5466.666666666667">
+				</FB>
+				<FB Name="SUB_MORE_CAPS_AVAILABLE" Type="SUBSCRIBE_0" Comment="" x="813.3333333333334" y="3013.3333333333335">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,MORE_CAPS_AVAILABLE]&quot;"/>
+				</FB>
+				<FB Name="PUB_CAP_NOT_REACHABLE" Type="PUBLISH_0" Comment="" x="6786.666666666667" y="4026.666666666667">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAP_NOT_REACHABLE]&quot;"/>
+				</FB>
+				<FB Name="PUB_CAP_NOT_AVAILABLE" Type="PUBLISH_0" Comment="" x="6386.666666666667" y="1893.3333333333335">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,DESIRED_COLOR_CAP_NOT_AVAILABLE]&quot;"/>
+				</FB>
+				<FB Name="PUB_WRONG_CAP_ORIENTATION" Type="PUBLISH_0" Comment="" x="6653.333333333334" y="2960.0">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,WRONG_CAP_ORIENTATION]&quot;"/>
+				</FB>
+				<FB Name="SUB_CAPS_FLIPPED" Type="SUBSCRIBE_0" Comment="" x="946.6666666666667" y="4213.333333333334">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAPS_FLIPPED]&quot;"/>
+				</FB>
+				<FB Name="PUB_CAPS_FLIPPED" Type="PUBLISH_0" Comment="" x="16360.0" y="3880.0">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAPS_FLIPPED]&quot;"/>
+				</FB>
+				<FB Name="SUB_WRONG_CAP_ORIENTATION" Type="SUBSCRIBE_0" Comment="" x="10000.0" y="4000.0">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,WRONG_CAP_ORIENTATION]&quot;"/>
+				</FB>
+				<FB Name="PUB_PICK_CAP" Type="PUBLISH_3" Comment="" x="6920.0" y="5226.666666666667">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,PICK_CAP]&quot;"/>
+				</FB>
+				<FB Name="PUB_CAP_REQUIRED" Type="PUBLISH_1" Comment="" x="6106.666666666667" y="-1693.3333333333335">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;fbdk[].kafka[localhost:9092,CAP_REQUIRED]&quot;"/>
+				</FB>
+				<SubApp Name="SubApp" Comment="" x="2973.3333333333335" y="-1733.3333333333335">
+					<SubAppInterfaceList>
+						<SubAppEventInputs>
+							<SubAppEvent Name="REQ" Type="Event" Comment="">
+							</SubAppEvent>
+							<SubAppEvent Name="RESET" Type="Event" Comment="">
+							</SubAppEvent>
+						</SubAppEventInputs>
+						<SubAppEventOutputs>
+							<SubAppEvent Name="CNF" Type="Event" Comment="">
+							</SubAppEvent>
+						</SubAppEventOutputs>
+						<InputVars>
+							<VarDeclaration Name="Name" Type="STRING" Comment="" InitialValue="'MySpinner'"/>
+							<VarDeclaration Name="ID" Type="INT" Comment="" InitialValue="1512"/>
+							<VarDeclaration Name="Colour" Type="STRING" Comment="" InitialValue="'red'"/>
+							<VarDeclaration Name="Current_Pos" Type="INT" Comment="" InitialValue="3"/>
+						</InputVars>
+						<OutputVars>
+							<VarDeclaration Name="Colour_Req" Type="STRING" Comment=""/>
+						</OutputVars>
+					</SubAppInterfaceList>
+					<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+					<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+				</SubApp>
+				<FB Name="Bunker" Type="Bunker" Comment="" x="11126.666666666668" y="-873.3333333333334">
+				</FB>
+				<FB Name="Vibrator" Type="Vibrator" Comment="" x="12313.333333333334" y="4393.333333333334">
+				</FB>
+				<FB Name="Camera" Type="Camera" Comment="" x="3353.3333333333335" y="500.0">
+				</FB>
+				<EventConnections>
+					<Connection Source="START.COLD" Destination="PUB_CAP_REQUIRED.INIT" Comment="" dx1="3753.3333333333335"/>
+					<Connection Source="SubApp.CNF" Destination="PUB_CAP_REQUIRED.REQ" Comment="" dx1="346.6666666666667"/>
+					<Connection Source="START.WARM" Destination="PUB_CAP_REQUIRED.INIT" Comment="" dx1="3753.3333333333335"/>
+					<Connection Source="START.COLD" Destination="SUB_MORE_CAPS_AVAILABLE.INIT" Comment="" dx1="80.0" dx2="80.0" dy="1506.6666666666667"/>
+					<Connection Source="START.COLD" Destination="SUB_CAPS_FLIPPED.INIT" Comment="" dx1="80.0" dx2="80.0" dy="2106.666666666667"/>
+					<Connection Source="START.COLD" Destination="SUB_CAPS_REACHABLE_NOW.INIT" Comment="" dx1="80.0" dx2="80.0" dy="2640.0"/>
+					<Connection Source="START.COLD" Destination="PUB_CAP_NOT_AVAILABLE.INIT" Comment="" dx1="2866.666666666667"/>
+					<Connection Source="START.COLD" Destination="PUB_WRONG_CAP_ORIENTATION.INIT" Comment="" dx1="2833.3333333333335"/>
+					<Connection Source="START.COLD" Destination="PUB_CAP_NOT_REACHABLE.INIT" Comment="" dx1="2833.3333333333335"/>
+					<Connection Source="START.COLD" Destination="PUB_PICK_CAP.INIT" Comment="" dx1="2773.3333333333335"/>
+					<Connection Source="START.COLD" Destination="SUB_CAP_NOT_AVAILABLE.INIT" Comment="" dx1="4713.333333333334"/>
+					<Connection Source="START.COLD" Destination="PUB_MORE_CAPS_AVAILABLE.INIT" Comment="" dx1="7326.666666666667"/>
+					<Connection Source="START.COLD" Destination="SUB_WRONG_CAP_ORIENTATION.INIT" Comment="" dx1="4666.666666666667"/>
+					<Connection Source="START.COLD" Destination="SUB_CAP_NOT_REACHABLE.INIT" Comment="" dx1="4666.666666666667"/>
+					<Connection Source="START.COLD" Destination="PUB_CAPS_FLIPPED.INIT" Comment="" dx1="7353.333333333334"/>
+					<Connection Source="START.COLD" Destination="PUB_CAPS_IN_REACHABLE_AREA.INIT" Comment="" dx1="7653.333333333334"/>
+					<Connection Source="SUB_CAP_NOT_AVAILABLE.IND" Destination="Bunker.DESIRED_COLOUR_CAP_NOT_AVAILABLE" Comment="" dx1="86.66666666666667"/>
+					<Connection Source="Bunker.MORE_CAPS_AVAILABLE" Destination="PUB_MORE_CAPS_AVAILABLE.REQ" Comment="" dx1="973.3333333333334"/>
+					<Connection Source="SUB_WRONG_CAP_ORIENTATION.IND" Destination="Vibrator.WRONG_CAP_ORIENTATION" Comment="" dx1="480.0"/>
+					<Connection Source="SUB_CAP_NOT_REACHABLE.IND" Destination="Vibrator.CAP_NOT_REACHABLE" Comment="" dx1="480.0"/>
+					<Connection Source="Vibrator.CAPS_FLIPPED" Destination="PUB_CAPS_FLIPPED.REQ" Comment="" dx1="840.0"/>
+					<Connection Source="Vibrator.CAPS_REACHABLE" Destination="PUB_CAPS_IN_REACHABLE_AREA.REQ" Comment="" dx1="1226.6666666666667"/>
+					<Connection Source="SUB_CAP_REQUIRED.IND" Destination="Camera.CAP_REQUIRED" Comment=""/>
+					<Connection Source="SUB_MORE_CAPS_AVAILABLE.IND" Destination="Camera.BUNKER_FEED_CAPS" Comment=""/>
+					<Connection Source="SUB_CAPS_FLIPPED.IND" Destination="Camera.VIBRATOR_ORIENTED_CORRECT" Comment=""/>
+					<Connection Source="SUB_CAPS_REACHABLE_NOW.IND" Destination="Camera.VIBRATOR_CAP_REACHABLE" Comment=""/>
+					<Connection Source="Camera.DESIRED_COLOR_CAP_NOT_AVAILABLE" Destination="PUB_CAP_NOT_AVAILABLE.REQ" Comment=""/>
+					<Connection Source="Camera.WRONG_CAP_ORIENTATION" Destination="PUB_WRONG_CAP_ORIENTATION.REQ" Comment=""/>
+					<Connection Source="Camera.CAP_NOT_REACHANBLE" Destination="PUB_CAP_NOT_REACHABLE.REQ" Comment=""/>
+					<Connection Source="Camera.CAP_RECHANBLE" Destination="PUB_PICK_CAP.REQ" Comment=""/>
+				</EventConnections>
+				<DataConnections>
+					<Connection Source="SubApp.Colour_Req" Destination="PUB_CAP_REQUIRED.SD_1" Comment="" dx1="346.6666666666667"/>
+					<Connection Source="SUB_CAP_REQUIRED.RD_1" Destination="Camera.Product_Color" Comment=""/>
+					<Connection Source="Camera.Pick_Pos_X" Destination="PUB_PICK_CAP.SD_1" Comment=""/>
+					<Connection Source="Camera.Pick_Pos_Y" Destination="PUB_PICK_CAP.SD_2" Comment=""/>
+					<Connection Source="Camera.Pick_Pos_Z" Destination="PUB_PICK_CAP.SD_3" Comment=""/>
+				</DataConnections>
+				<AdapterConnections>
+					<Connection Source="Bunker.Timer" Destination="E_RTimeOut.TimeOutSocket" Comment="" dx1="80.0" dx2="80.0" dy="280.0"/>
+					<Connection Source="Vibrator.Timer" Destination="E_RTimeOut_1.TimeOutSocket" Comment="" dx1="80.0" dx2="80.0" dy="260.0"/>
+				</AdapterConnections>
+			</FBNetwork>
+		</Resource>
+	</Device>
+	<Mapping From="SS3_default.SUB_CAP_NOT_AVAILABLE" To="FORTE_PC.EMB_RES.SUB_CAP_NOT_AVAILABLE"/>
+	<Mapping From="SS3_default.SUB_CAPS_REACHABLE_NOW" To="FORTE_PC.EMB_RES.SUB_CAPS_REACHABLE_NOW"/>
+	<Mapping From="SS3_default.PUB_MORE_CAPS_AVAILABLE" To="FORTE_PC.EMB_RES.PUB_MORE_CAPS_AVAILABLE"/>
+	<Mapping From="SS3_default.PUB_CAPS_IN_REACHABLE_AREA" To="FORTE_PC.EMB_RES.PUB_CAPS_IN_REACHABLE_AREA"/>
+	<Mapping From="SS3_default.SUB_CAP_REQUIRED" To="FORTE_PC.EMB_RES.SUB_CAP_REQUIRED"/>
+	<Mapping From="SS3_default.SUB_CAP_NOT_REACHABLE" To="FORTE_PC.EMB_RES.SUB_CAP_NOT_REACHABLE"/>
+	<Mapping From="SS3_default.E_RTimeOut" To="FORTE_PC.EMB_RES.E_RTimeOut"/>
+	<Mapping From="SS3_default.E_RTimeOut_1" To="FORTE_PC.EMB_RES.E_RTimeOut_1"/>
+	<Mapping From="SS3_default.SUB_MORE_CAPS_AVAILABLE" To="FORTE_PC.EMB_RES.SUB_MORE_CAPS_AVAILABLE"/>
+	<Mapping From="SS3_default.PUB_CAP_NOT_REACHABLE" To="FORTE_PC.EMB_RES.PUB_CAP_NOT_REACHABLE"/>
+	<Mapping From="SS3_default.PUB_CAP_NOT_AVAILABLE" To="FORTE_PC.EMB_RES.PUB_CAP_NOT_AVAILABLE"/>
+	<Mapping From="SS3_default.PUB_WRONG_CAP_ORIENTATION" To="FORTE_PC.EMB_RES.PUB_WRONG_CAP_ORIENTATION"/>
+	<Mapping From="SS3_default.SUB_CAPS_FLIPPED" To="FORTE_PC.EMB_RES.SUB_CAPS_FLIPPED"/>
+	<Mapping From="SS3_default.PUB_CAPS_FLIPPED" To="FORTE_PC.EMB_RES.PUB_CAPS_FLIPPED"/>
+	<Mapping From="SS3_default.SUB_WRONG_CAP_ORIENTATION" To="FORTE_PC.EMB_RES.SUB_WRONG_CAP_ORIENTATION"/>
+	<Mapping From="SS3_default.PUB_PICK_CAP" To="FORTE_PC.EMB_RES.PUB_PICK_CAP"/>
+	<Mapping From="SS3_default.PUB_CAP_REQUIRED" To="FORTE_PC.EMB_RES.PUB_CAP_REQUIRED"/>
+	<Mapping From="SS3_default.SubApp" To="FORTE_PC.EMB_RES.SubApp"/>
+	<Mapping From="SS3_default.Bunker" To="FORTE_PC.EMB_RES.Bunker"/>
+	<Mapping From="SS3_default.Vibrator" To="FORTE_PC.EMB_RES.Vibrator"/>
+	<Mapping From="SS3_default.Camera" To="FORTE_PC.EMB_RES.Camera"/>
+	<Segment Name="Ethernet" Type="Ethernet" Comment="" x="2546.666666666667" y="2100.0" dx1="2000.0">
+		<Attribute Name="Color" Type="STRING" Value="137,212,204"/>
+	</Segment>
+	<Link SegmentName="Ethernet" CommResource="FORTE_PC" Comment="">
+	</Link>
+</System>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FBType Name="ContentFilter" Comment="FB to check if a member value is changed or no!">
+	<Identification Standard="61499-2">
+	</Identification>
+	<VersionInfo Version="1.0" Author="AK121668" Date="2021-07-23">
+	</VersionInfo>
+	<InterfaceList>
+		<EventInputs>
+			<Event Name="REQ" Type="Event" Comment="">
+				<With Var="Filter_name"/>
+				<With Var="Struct_Message"/>
+			</Event>
+		</EventInputs>
+		<EventOutputs>
+			<Event Name="CNF" Type="Event" Comment="">
+				<With Var="Error"/>
+				<With Var="New_Value"/>
+			</Event>
+		</EventOutputs>
+		<InputVars>
+			<VarDeclaration Name="Struct_Message" Type="spinner" Comment=""/>
+			<VarDeclaration Name="Filter_name" Type="STRING" Comment=""/>
+		</InputVars>
+		<OutputVars>
+			<VarDeclaration Name="Error" Type="BOOL" Comment=""/>
+			<VarDeclaration Name="New_Value" Type="STRING" Comment=""/>
+		</OutputVars>
+	</InterfaceList>
+	<FBNetwork>
+		<FB Name="GET_STRUCT_VALUE_2" Type="GET_STRUCT_VALUE" Comment="" x="-133.33333333333334" y="533.3333333333334">
+			<Parameter Name="member" Value="'current_pos'"/>
+		</FB>
+		<FB Name="E_SWITCH_1" Type="E_SWITCH" Comment="" x="3866.666666666667" y="666.6666666666667">
+		</FB>
+		<FB Name="GET_STRUCT_VALUE_3" Type="GET_STRUCT_VALUE" Comment="" x="666.6666666666667" y="1866.6666666666667">
+			<Parameter Name="member" Value="'colour'"/>
+		</FB>
+		<FB Name="STRING2STRING" Type="STRING2STRING" Comment="" x="3333.3333333333335" y="2000.0">
+		</FB>
+		<FB Name="F_EQ" Type="F_EQ" Comment="" x="2666.666666666667" y="666.6666666666667">
+			<Parameter Name="IN2" Value="USINT#3"/>
+		</FB>
+		<FB Name="USINT2USINT" Type="USINT2USINT" Comment="" x="1333.3333333333335" y="666.6666666666667">
+		</FB>
+		<EventConnections>
+			<Connection Source="F_EQ.CNF" Destination="E_SWITCH_1.EI" Comment=""/>
+			<Connection Source="GET_STRUCT_VALUE_3.CNF" Destination="STRING2STRING.REQ" Comment="" dx1="800.0"/>
+			<Connection Source="GET_STRUCT_VALUE_2.CNF" Destination="GET_STRUCT_VALUE_3.REQ" Comment="" dx1="80.0" dx2="80.0" dy="866.6666666666667"/>
+			<Connection Source="E_SWITCH_1.EO1" Destination="CNF" Comment="" dx1="1173.3333333333335"/>
+			<Connection Source="REQ" Destination="GET_STRUCT_VALUE_2.REQ" Comment="" dx1="600.0"/>
+			<Connection Source="USINT2USINT.CNF" Destination="F_EQ.REQ" Comment=""/>
+			<Connection Source="GET_STRUCT_VALUE_2.CNF" Destination="USINT2USINT.REQ" Comment="" dx1="200.0"/>
+		</EventConnections>
+		<DataConnections>
+			<Connection Source="GET_STRUCT_VALUE_3.output" Destination="STRING2STRING.IN" Comment="" dx1="800.0"/>
+			<Connection Source="F_EQ.OUT" Destination="E_SWITCH_1.G" Comment="" dx1="353.33333333333337"/>
+			<Connection Source="STRING2STRING.OUT" Destination="New_Value" Comment="" dx1="1193.3333333333335"/>
+			<Connection Source="Filter_name" Destination="GET_STRUCT_VALUE_3.member" Comment="" dx1="1000.0"/>
+			<Connection Source="USINT2USINT.OUT" Destination="F_EQ.IN1" Comment=""/>
+			<Connection Source="GET_STRUCT_VALUE_2.output" Destination="USINT2USINT.IN" Comment="" dx1="200.0"/>
+			<Connection Source="Struct_Message" Destination="GET_STRUCT_VALUE_2.in_struct" Comment="" dx1="600.0"/>
+			<Connection Source="Struct_Message" Destination="GET_STRUCT_VALUE_3.in_struct" Comment="" dx1="1000.0"/>
+		</DataConnections>
+	</FBNetwork>
+</FBType>

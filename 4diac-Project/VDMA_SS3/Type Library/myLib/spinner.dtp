@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataType Name="spinner" Comment="Reponse sent by the orchestrator">
+	<Identification Standard="61499-2">
+	</Identification>
+	<VersionInfo Organization="fortiss GmbH" Version="1.0" Author="Jose Cabral" Date="2018-09-26">
+	</VersionInfo>
+	<StructuredType>
+		<VarDeclaration Name="name" Type="STRING" Comment="" InitialValue="'paul'"/>
+		<VarDeclaration Name="id" Type="INT" Comment="" InitialValue="45"/>
+		<VarDeclaration Name="colour" Type="STRING" Comment="" InitialValue="'Linz'"/>
+		<VarDeclaration Name="current_pos" Type="USINT" Comment="" InitialValue="2"/>
+	</StructuredType>
+</DataType>
