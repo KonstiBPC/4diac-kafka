@@ -1,0 +1,1577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_thread.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_sem.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_sync.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_architecture.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_architecture_time.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\winforte_printer.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\genforte_realFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_instance.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\win32socketinterf.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\fdselecthand.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\utils\mainparam_utils.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\timerha.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\devlog.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\basecommfb.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\commfb.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\comlayer.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\core\cominfra\comlayersmanager.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\ipcomlayer.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\fbdkasn1layer.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\localcomlayer.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\rawdatacomlayer.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_elementary.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_int.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_sint.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_dint.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_udint.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_uint.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_usint.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_dword.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_word.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_byte.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_bool.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_string.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_time.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_string.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_num.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_magnitude.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_bit.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_int.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_real.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_struct.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_lint.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_ulint.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_time_of_day.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_date_and_time.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_date.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_date.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_lword.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_real.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_lreal.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_array.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_wstring.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\unicode_utils.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils\string_utils.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils\parameterParser.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils\configFileParser.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\ecetFactory.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\conn.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\dataconn.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\eventconn.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\simplefb.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\basicfb.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cfb.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\device.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\devexec.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\extevhan.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\funcbloc.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\fbcontainer.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\if2indco.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\resource.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\stringdict.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\typelib.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\ecet.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\adapterconn.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\adapter.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\anyadapter.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\iec61131_functions.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\core\deviceExecutionHandlers.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\monitoring.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BistableElements\FB_RS.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BistableElements\FB_SR.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTD_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTD_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTUD_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTU_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTU.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTU_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTUD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTD_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTD_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTU_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTU_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTUD_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTUD_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\EdgeDetection\FB_F_TRIG.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\EdgeDetection\FB_R_TRIG.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Timers\FB_TOF.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Timers\FB_TON.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Timers\FB_TP.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_REAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_REAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_REAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_REAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_BOOL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_TIME.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_REAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_S_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_MS_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_US_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_NS_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_S_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_MS_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_US_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_NS_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_S_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_MS_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_US_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_NS_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_REAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_REAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_REAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_BYTE_BCD_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_WORD_BCD_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_DWORD_BCD_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_USINT_TO_BCD_BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_UINT_TO_BCD_WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_UDINT_TO_BCD_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_LWORD_BCD_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_ULINT_TO_BCD_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_BOOL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_TIME.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_REAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_REAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_REAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_LINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_LWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_ULINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_REAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DT\F_DT_TO_TOD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DT\F_DT_TO_DATE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_ABS.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_SQRT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_LN.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_LOG.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_SIN.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_COS.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_TAN.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_ASIN.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_ACOS.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_ATAN.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_EXP.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_AND.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_NOT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_OR.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_XOR.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\genbitbase.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\GEN_AND.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\GEN_OR.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\GEN_XOR.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_SHL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_SHR.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_ROR.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_ROL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Selection\F_LIMIT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Selection\F_MIN.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Selection\F_MAX.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Selection\F_SEL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Selection\F_MUX_2.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_GT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_EQ.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_GE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_LE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_LT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_NE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_ADD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_MUL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_DIV.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_MOD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_EXPT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_MOVE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_MULTIME.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_DIVTIME.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\GEN_ADD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_TRUNC.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_ADD_DT_TIME.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_ADD_TOD_TIME.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB_DT_TIME.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB_TOD_TIME.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB_DT_DT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB_DATE_DATE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB_TOD_TOD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_LEN.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_LEFT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_RIGHT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_MID.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_CONCAT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_INSERT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_DELETE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_REPLACE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_FIND.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_CONCAT_DATE_TOD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\BOOL2BOOL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\BYTE2BYTE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\DINT2DINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\DWORD2DWORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\INT2INT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\SINT2SINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\STRING2STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\TIME2TIME.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\UINT2UINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\UDINT2UDINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\USINT2USINT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\WORD2WORD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\WSTRING2WSTRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\GEN_STRUCT_MUX.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\GEN_STRUCT_DEMUX.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\REAL2REAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\LREAL2LREAL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\EC_KILL_ELEM.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\EC_SET_EVT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\EC_START_ELEM.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\EC_STOP_ELEM.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_CREATE_CONN.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_CREATE_FB.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_DEL_CONN.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_DEL_FB.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_REC_CONN.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_SET_PARM.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\E_STOPWATCH.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\OUT_ANY_CONSOLE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_F_MUX.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_CSV_WRITER.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_APPEND_STRING.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_ARRAY2VALUES.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_VALUES2ARRAY.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_ARRAY2ARRAY.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GET_AT_INDEX.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\SET_AT_INDEX.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\FB_RANDOM.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GET_STRUCT_VALUE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\STEST_END.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\TEST_CONDITION.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka\KafkaComLayer.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka\fbdkSelectLayer.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka\KafkaHandler.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\Bunker.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\ContentFilter.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\FB_Detect_VarChange.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\forte_spinner.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\Vibrator.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\timedfb.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_CTU.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_CTD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_CTUD.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_DELAY.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_D_FF.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_MERGE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_REND.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_RS.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_SELECT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_SR.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_CYCLE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_DEMUX.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_F_TRIG.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_PERMIT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_RDELAY.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_RESTART.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_R_TRIG.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_SPLIT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_SWITCH.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\GEN_E_DEMUX.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\GEN_E_MUX.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\ATimeOut.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_TimeOut.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\ARTimeOut.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_RTimeOut.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_T_FF.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_TRAIN.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\ita\DEV_MGR.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\ita\EMB_RES.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\ita\RMT_DEV.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\ita\RMT_RES.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\ita\ForteBootFileLoader.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_CLIENT.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_PUBLISH.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_SERVER.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_SUBSCRIBE.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_PUBL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_SUBL.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\pctimeha.cpp">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4E2A8A2A-9547-3DDF-93EE-C6E52F232F6A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

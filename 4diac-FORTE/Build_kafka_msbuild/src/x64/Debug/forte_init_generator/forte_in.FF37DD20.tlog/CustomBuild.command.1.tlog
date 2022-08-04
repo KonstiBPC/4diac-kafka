@@ -1,0 +1,20 @@
+^C:\FORTE_DEV\FORTE-SOURCECODE\BUILD\BUILD_KAFKA_MSBUILD\CMAKEFILES\812EB27E3AF7A3E97831789FD14D9C20\FORTE_INIT_GENERATOR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DFORTE_BINARY_DIR:STRING="C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild" -DFORTE_SOURCE_DIR:STRING="C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte" -DFORTE_USE_64BIT_DATATYPES:STRING="ON" -DFORTE_USE_REAL_DATATYPE:STRING="ON" -DFORTE_USE_LREAL_DATATYPE:STRING="ON" -DFORTE_SUPPORT_ARRAYS:STRING="ON" -DFORTE_LITTLE_ENDIAN:STRING= -DFORTE_BIG_ENDIAN:STRING= -DFORTE_LOGLEVEL:STRING="LOGDEBUG" -P C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/buildsupport/generate_init.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\FORTE_DEV\FORTE-SOURCECODE\ORG.ECLIPSE.4DIAC.FORTE\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte -BC:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild --check-stamp-file C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

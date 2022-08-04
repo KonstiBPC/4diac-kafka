@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/CMakeFiles/cmake.verify_globs
+C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/external/CMakeLists.txt
+C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/buildsupport/generate_modules_cmake_file.cmake
+C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/src/CMakeLists.txt
+C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/src/core/cominfra/comlayersmanager.cpp.in
+C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/src/core/deviceExecutionHandlers.cpp.in

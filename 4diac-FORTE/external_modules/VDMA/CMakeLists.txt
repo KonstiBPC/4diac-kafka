@@ -1,0 +1,9 @@
+forte_add_directory_module()
+#forte_add_all_sourcefiles()
+###
+forte_add_sourcefile_hcpp(Bunker)
+forte_add_sourcefile_hcpp(Camera)
+forte_add_sourcefile_hcpp(ContentFilter)
+forte_add_sourcefile_hcpp(FB_Detect_VarChange)
+forte_add_sourcefile_hcpp(forte_spinner)
+forte_add_sourcefile_hcpp(Vibrator)

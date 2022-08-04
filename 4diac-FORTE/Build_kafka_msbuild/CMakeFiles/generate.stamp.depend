@@ -1,0 +1,31 @@
+# CMake generation dependency list for this directory.
+C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/CMakeFiles/3.24.0-rc2/CMakeCCompiler.cmake
+C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/CMakeFiles/3.24.0-rc2/CMakeCXXCompiler.cmake
+C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/CMakeFiles/3.24.0-rc2/CMakeRCCompiler.cmake
+C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/CMakeFiles/3.24.0-rc2/CMakeSystem.cmake
+C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/CMakeFiles/cmake.verify_globs
+C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/CMakeLists.txt
+C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/buildsupport/check_compiler_features.cmake
+C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/buildsupport/forte.cmake
+C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/buildsupport/opcua.cmake
+C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/forte_config.h.in
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake

@@ -1,0 +1,1364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F286A2BE-8A65-3114-B2E3-D79BB60F7547}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>FORTE_LITE</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">FORTE_LITE.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">FORTE_LITE.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">FORTE_LITE</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">FORTE_LITE.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">FORTE_LITE.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">FORTE_LITE</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">FORTE_LITE.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">FORTE_LITE.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">FORTE_LITE</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">FORTE_LITE.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">FORTE_LITE.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">FORTE_LITE</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4595;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4595;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4595;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4595;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte -BC:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild --check-stamp-file C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\CMakeFiles\cmake.verify_globs;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\external\CMakeLists.txt;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\buildsupport\generate_modules_cmake_file.cmake;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\comlayersmanager.cpp.in;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\deviceExecutionHandlers.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte -BC:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild --check-stamp-file C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\CMakeFiles\cmake.verify_globs;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\external\CMakeLists.txt;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\buildsupport\generate_modules_cmake_file.cmake;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\comlayersmanager.cpp.in;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\deviceExecutionHandlers.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte -BC:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild --check-stamp-file C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\CMakeFiles\cmake.verify_globs;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\external\CMakeLists.txt;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\buildsupport\generate_modules_cmake_file.cmake;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\comlayersmanager.cpp.in;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\deviceExecutionHandlers.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte -BC:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild --check-stamp-file C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\CMakeFiles\cmake.verify_globs;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\external\CMakeLists.txt;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\buildsupport\generate_modules_cmake_file.cmake;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\comlayersmanager.cpp.in;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\deviceExecutionHandlers.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\fortealloc.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\forte_architecture_time.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_thread.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_sem.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_sync.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_instance.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\sockhand.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\win32socketinterf.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\fdselecthand.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\gensockhand.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\utils\mainparam_utils.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\timerha.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\devlog.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\comtypes.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\comlayersmanager.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\basecommfb.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\commfb.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\comlayer.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\ipcomlayer.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\fbdkasn1layer.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\localcomlayer.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\rawdatacomlayer.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert\convert_functions.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_elementary.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_int.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_sint.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_dint.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_udint.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_uint.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_usint.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_dword.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_word.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_byte.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_bool.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_string.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_time.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_string.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_num.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_magnitude.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_bit.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_int.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_real.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_struct.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_lint.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_ulint.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_time_of_day.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_date_and_time.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_date.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_date.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_lword.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_real.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_lreal.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_array.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_wstring.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\unicode_utils.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils\anyhelper.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils\staticassert.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils\singlet.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils\criticalregion.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils\fortearray.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils\fixedcapvector.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils\string_utils.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils\parameterParser.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils\configFileParser.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\conn.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\dataconn.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\eventconn.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\esfb.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\event.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\mgmcmd.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\fortenode.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\fortelist.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\genfb.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\simplefb.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\basicfb.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cfb.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\device.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\devexec.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\extevhan.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\funcbloc.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\fbcontainer.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\if2indco.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\resource.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\stringdict.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\typelib.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\ecet.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\adapterconn.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\adapter.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\anyadapter.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\iec61131_functions.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\monitoring.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BistableElements\FB_RS.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BistableElements\FB_SR.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTD_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTD_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTUD_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTU_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTU.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTU_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTUD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTD_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTD_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTU_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTU_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTUD_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTUD_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\EdgeDetection\FB_F_TRIG.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\EdgeDetection\FB_R_TRIG.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Timers\FB_TOF.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Timers\FB_TON.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Timers\FB_TP.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_REAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_REAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_REAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_REAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_BOOL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_TIME.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_REAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_S_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_MS_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_US_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_NS_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_S_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_MS_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_US_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_NS_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_S_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_MS_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_US_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_NS_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_REAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_REAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_REAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_BYTE_BCD_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_WORD_BCD_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_DWORD_BCD_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_USINT_TO_BCD_BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_UINT_TO_BCD_WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_UDINT_TO_BCD_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_LWORD_BCD_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_ULINT_TO_BCD_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_BOOL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_TIME.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_REAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_REAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_REAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_LINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_LWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_ULINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_REAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DT\F_DT_TO_TOD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DT\F_DT_TO_DATE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_ABS.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_SQRT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_LN.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_LOG.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_SIN.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_COS.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_TAN.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_ASIN.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_ACOS.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_ATAN.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_EXP.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_AND.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_NOT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_OR.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_XOR.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\genbitbase.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\GEN_AND.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\GEN_OR.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\GEN_XOR.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_SHL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_SHR.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_ROR.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_ROL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Selection\F_LIMIT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Selection\F_MIN.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Selection\F_MAX.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Selection\F_SEL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Selection\F_MUX_2.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_GT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_EQ.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_GE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_LE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_LT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_NE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_ADD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_MUL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_DIV.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_MOD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_EXPT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_MOVE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_MULTIME.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_DIVTIME.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\GEN_ADD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_TRUNC.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_ADD_DT_TIME.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_ADD_TOD_TIME.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB_DT_TIME.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB_TOD_TIME.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB_DT_DT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB_DATE_DATE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB_TOD_TOD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_LEN.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_LEFT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_RIGHT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_MID.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_CONCAT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_INSERT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_DELETE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_REPLACE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_FIND.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_CONCAT_DATE_TOD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\BOOL2BOOL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\BYTE2BYTE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\DINT2DINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\DWORD2DWORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\INT2INT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\SINT2SINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\STRING2STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\TIME2TIME.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\UINT2UINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\UDINT2UDINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\USINT2USINT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\WORD2WORD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\WSTRING2WSTRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\GEN_STRUCT_MUX.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\GEN_STRUCT_DEMUX.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\REAL2REAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\LREAL2LREAL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\EC_KILL_ELEM.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\EC_SET_EVT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\EC_START_ELEM.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\EC_STOP_ELEM.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_CREATE_CONN.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_CREATE_FB.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_DEL_CONN.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_DEL_FB.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_REC_CONN.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_SET_PARM.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\E_STOPWATCH.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\OUT_ANY_CONSOLE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_F_MUX.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_CSV_WRITER.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_APPEND_STRING.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_ARRAY2VALUES.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_VALUES2ARRAY.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_ARRAY2ARRAY.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GET_AT_INDEX.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\SET_AT_INDEX.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\FB_RANDOM.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GET_STRUCT_VALUE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\STEST_END.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\TEST_CONDITION.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka\KafkaComLayer.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka\fbdkSelectLayer.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka\KafkaHandler.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\Bunker.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\Camera.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\ContentFilter.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\FB_Detect_VarChange.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\forte_spinner.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\Vibrator.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\timedfb.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_CTU.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_CTD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_CTUD.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_DELAY.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_D_FF.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_MERGE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_REND.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_RS.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_SELECT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_SR.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_CYCLE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_DEMUX.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_F_TRIG.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_PERMIT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_RDELAY.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_RESTART.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_R_TRIG.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_SPLIT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_SWITCH.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\GEN_E_DEMUX.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\GEN_E_MUX.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\ATimeOut.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_TimeOut.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\ARTimeOut.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_RTimeOut.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_T_FF.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_TRAIN.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\ita\DEV_MGR.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\ita\EMB_RES.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\ita\RMT_DEV.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\ita\RMT_RES.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\ita\ForteBootFileLoader.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_CLIENT.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_PUBLISH.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_SERVER.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_SUBSCRIBE.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_PUBL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_SUBL.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\stringlist.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\forteinit.h" />
+    <ClInclude Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\pctimeha.h" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_thread.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_sem.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_sync.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_architecture.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_architecture_time.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\winforte_printer.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\genforte_realFunctions.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\forte_instance.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\win32socketinterf.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\fdselecthand.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\utils\mainparam_utils.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\timerha.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\devlog.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\basecommfb.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\commfb.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\comlayer.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\core\cominfra\comlayersmanager.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\ipcomlayer.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\fbdkasn1layer.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\localcomlayer.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\rawdatacomlayer.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_elementary.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_int.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_sint.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_dint.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_udint.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_uint.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_usint.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_dword.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_word.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_byte.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_bool.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_string.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_time.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_string.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_num.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_magnitude.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_bit.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_int.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_real.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_struct.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_lint.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_ulint.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_time_of_day.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_date_and_time.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_any_date.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_date.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_lword.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_real.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_lreal.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_array.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\forte_wstring.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\unicode_utils.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils\string_utils.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils\parameterParser.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils\configFileParser.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\ecetFactory.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\conn.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\dataconn.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\eventconn.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\simplefb.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\basicfb.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cfb.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\device.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\devexec.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\extevhan.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\funcbloc.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\fbcontainer.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\if2indco.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\resource.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\stringdict.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\typelib.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\ecet.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\adapterconn.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\adapter.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\anyadapter.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\iec61131_functions.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\core\deviceExecutionHandlers.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\monitoring.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BistableElements\FB_RS.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BistableElements\FB_SR.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTD_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTD_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTUD_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTU_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTU.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTU_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTUD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTD_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTD_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTU_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTU_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTUD_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Counters\FB_CTUD_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\EdgeDetection\FB_F_TRIG.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\EdgeDetection\FB_R_TRIG.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Timers\FB_TOF.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Timers\FB_TON.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Timers\FB_TP.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BOOL\F_BOOL_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BYTE\F_BYTE_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_REAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DINT\F_DINT_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_REAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DWORD\F_DWORD_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_REAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\INT\F_INT_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_REAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\SINT\F_SINT_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_BOOL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_TIME.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_REAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\STRING\F_STRING_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_S_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_MS_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_US_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_NS_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_S_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_MS_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_US_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_NS_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_S_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_MS_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_US_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_IN_NS_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\TIME\F_TIME_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_REAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UDINT\F_UDINT_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_REAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\UINT\F_UINT_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_REAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\USINT\F_USINT_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WORD\F_WORD_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_BYTE_BCD_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_WORD_BCD_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_DWORD_BCD_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_USINT_TO_BCD_BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_UINT_TO_BCD_WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_UDINT_TO_BCD_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_LWORD_BCD_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\BCD\F_ULINT_TO_BCD_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_BOOL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_TIME.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_REAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\WSTRING\F_WSTRING_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\REAL\F_REAL_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_REAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LREAL\F_LREAL_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_REAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\ULINT\F_ULINT_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_LINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LWORD\F_LWORD_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_LWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_ULINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_REAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\LINT\F_LINT_TO_WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DT\F_DT_TO_TOD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Conversion\DT\F_DT_TO_DATE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_ABS.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_SQRT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_LN.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_LOG.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_SIN.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_COS.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_TAN.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_ASIN.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_ACOS.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_ATAN.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Numerical\F_EXP.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_AND.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_NOT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_OR.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_XOR.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\genbitbase.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\GEN_AND.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\GEN_OR.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\GEN_XOR.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_SHL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_SHR.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_ROR.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\BitwiseOperators\F_ROL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Selection\F_LIMIT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Selection\F_MIN.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Selection\F_MAX.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Selection\F_SEL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Selection\F_MUX_2.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_GT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_EQ.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_GE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_LE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_LT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Comparison\F_NE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_ADD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_MUL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_DIV.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_MOD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_EXPT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_MOVE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_MULTIME.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_DIVTIME.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\GEN_ADD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_TRUNC.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_ADD_DT_TIME.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_ADD_TOD_TIME.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB_DT_TIME.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB_TOD_TIME.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB_DT_DT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB_DATE_DATE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\Arithmetic\F_SUB_TOD_TOD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_LEN.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_LEFT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_RIGHT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_MID.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_CONCAT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_INSERT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_DELETE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_REPLACE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_FIND.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\IEC61131-3\CharacterString\F_CONCAT_DATE_TOD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\BOOL2BOOL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\BYTE2BYTE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\DINT2DINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\DWORD2DWORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\INT2INT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\SINT2SINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\STRING2STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\TIME2TIME.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\UINT2UINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\UDINT2UDINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\USINT2USINT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\WORD2WORD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\WSTRING2WSTRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\GEN_STRUCT_MUX.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\GEN_STRUCT_DEMUX.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\REAL2REAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\convert\LREAL2LREAL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\EC_KILL_ELEM.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\EC_SET_EVT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\EC_START_ELEM.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\EC_STOP_ELEM.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_CREATE_CONN.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_CREATE_FB.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_DEL_CONN.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_DEL_FB.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_REC_CONN.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\reconfiguration\ST_SET_PARM.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\E_STOPWATCH.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\OUT_ANY_CONSOLE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_F_MUX.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_CSV_WRITER.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_APPEND_STRING.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_ARRAY2VALUES.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_VALUES2ARRAY.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GEN_ARRAY2ARRAY.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GET_AT_INDEX.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\SET_AT_INDEX.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\FB_RANDOM.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\GET_STRUCT_VALUE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\STEST_END.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\modules\utils\TEST_CONDITION.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka\KafkaComLayer.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka\fbdkSelectLayer.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka\KafkaHandler.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\Bunker.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\Camera.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\ContentFilter.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\FB_Detect_VarChange.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\forte_spinner.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\external_modules\VDMA\Vibrator.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\timedfb.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_CTU.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_CTD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_CTUD.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_DELAY.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_D_FF.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_MERGE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_REND.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_RS.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_SELECT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_SR.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_CYCLE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_DEMUX.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_F_TRIG.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_PERMIT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_RDELAY.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_RESTART.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_R_TRIG.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_SPLIT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_SWITCH.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\GEN_E_DEMUX.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\GEN_E_MUX.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\ATimeOut.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_TimeOut.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\ARTimeOut.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_RTimeOut.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_T_FF.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events\E_TRAIN.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\ita\DEV_MGR.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\ita\EMB_RES.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\ita\RMT_DEV.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\ita\RMT_RES.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\ita\ForteBootFileLoader.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_CLIENT.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_PUBLISH.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_SERVER.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_SUBSCRIBE.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_PUBL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\net\GEN_SUBL.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\stringlist.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\forteinit.cpp" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\pctimeha.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\ZERO_CHECK.proj">
+      <Project>{71AD627B-C68A-32BA-AB20-1E2ADA2F4D77}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\forte_init_generator.vcxproj">
+      <Project>{FF37DD20-834C-3A3C-8793-FE0622576A69}</Project>
+      <Name>forte_init_generator</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\forte_stringlist_externals.vcxproj">
+      <Project>{63B72ABB-B0BF-3CE1-BEF6-E1311252F655}</Project>
+      <Name>forte_stringlist_externals</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\forte_stringlist_generator.vcxproj">
+      <Project>{DE4AB120-833C-3CB6-BFF3-5A822CFE8300}</Project>
+      <Name>forte_stringlist_generator</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

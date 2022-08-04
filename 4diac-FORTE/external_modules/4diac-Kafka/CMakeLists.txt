@@ -1,0 +1,23 @@
+forte_add_network_layer(KAFKA OFF "kafka" KafkaComLayer KafkaComLayer "Enable Kafka  Com Layer")
+forte_add_network_layer(FBDKSELECT ON "fbdkSel" fbdkSelectLayer fbdkSelectLayer "Enable Forte Com FBDK with Out Selection")
+forte_add_handler(KafkaHandler KafkaHandler)
+
+SET(FORTE_COM_KAFKA_INC_DIR "" CACHE PATH "Path to Kafka source code")
+SET(FORTE_COM_KAFKA_BUILD_DIR "" CACHE PATH "Path where you build the kafka library ")
+
+forte_add_include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+forte_add_include_directories(${FORTE_COM_KAFKA_INC_DIR}/src)
+forte_add_include_directories(${FORTE_COM_KAFKA_INC_DIR}/src-cpp)
+forte_add_sourcefile_hcpp(KafkaComLayer KafkaHandler)
+
+if("${FORTE_ARCHITECTURE}" STREQUAL "Posix")
+    forte_add_link_directories(${FORTE_COM_KAFKA_BUILD_DIR}/src-cpp)
+    forte_add_link_directories(${FORTE_COM_KAFKA_BUILD_DIR}/src)
+    forte_add_link_library_beginning("librdkafka.so")
+    forte_add_link_library_beginning("librdkafka++.so")
+elseif("${FORTE_ARCHITECTURE}" STREQUAL "Win32")
+	forte_add_link_directories(${FORTE_COM_KAFKA_BUILD_DIR}/src/Debug)
+    forte_add_link_directories(${FORTE_COM_KAFKA_BUILD_DIR}/src-cpp/Debug)
+	forte_add_link_library("rdkafka++.dll")
+    forte_add_link_library("rdkafka.dll") 
+endif()

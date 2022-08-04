@@ -1,0 +1,871 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B0FB9EBB-3686-33AD-A966-A2ED16C95A0E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>forte</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">forte.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">forte</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">forte.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">forte</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">forte.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">forte</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">forte.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">forte</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4595;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;rpcrt4.lib;winmm.lib;ws2_32.lib;version.lib;rdkafka++.lib;rdkafka.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src/Debug;C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src/Debug/$(Configuration);C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src-cpp/Debug;C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src-cpp/Debug/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/Debug/forte.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/Debug/forte.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4595;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;rpcrt4.lib;winmm.lib;ws2_32.lib;version.lib;rdkafka++.lib;rdkafka.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src/Debug;C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src/Debug/$(Configuration);C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src-cpp/Debug;C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src-cpp/Debug/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/Release/forte.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/Release/forte.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4595;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;rpcrt4.lib;winmm.lib;ws2_32.lib;version.lib;rdkafka++.lib;rdkafka.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src/Debug;C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src/Debug/$(Configuration);C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src-cpp/Debug;C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src-cpp/Debug/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/MinSizeRel/forte.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/MinSizeRel/forte.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4595;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FORTE_COMPILATION;LOGDEBUG;FORTE_SUPPORT_QUERY_CMD;FORTE_SUPPORT_BOOT_FILE;FORTE_SUPPORT_MONITORING;FORTE_LITTLE_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_NO_W32_PSEUDO_MODIFIERS;FORTE_USE_64BIT_DATATYPES;FORTE_USE_REAL_DATATYPE;FORTE_USE_LREAL_DATATYPE;FORTE_SUPPORT_ARRAYS;FORTE_USE_WSTRING_DATATYPE;FORTE_UNICODE_SUPPORT;FORTE_SUPPORT_CUSTOM_SERIALIZABLE_DATATYPES;FORTE_ENABLE_GENERATED_SOURCE_CPP;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src_gen;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\.;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib\events;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\stdfblib;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src-cpp;C:\FORTE_dev\forte-sourcecode\Protocol_Base_lib\Kafka\librdkafka-master\librdkafka-master\src;C:\FORTE_dev\forte-sourcecode\external_modules\4diac-Kafka;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\opc_ua;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\com\mqtt_paho;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\utils;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes\convert;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\datatypes;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;rpcrt4.lib;winmm.lib;ws2_32.lib;version.lib;rdkafka++.lib;rdkafka.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src/Debug;C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src/Debug/$(Configuration);C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src-cpp/Debug;C:/FORTE_dev/forte-sourcecode/Protocol_Base_lib/Kafka/build_librdkafka-master/src-cpp/Debug/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/RelWithDebInfo/forte.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/RelWithDebInfo/forte.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte -BC:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild --check-stamp-file C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\CMakeFiles\cmake.verify_globs;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\external\CMakeLists.txt;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\buildsupport\generate_modules_cmake_file.cmake;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\comlayersmanager.cpp.in;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\deviceExecutionHandlers.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte -BC:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild --check-stamp-file C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\CMakeFiles\cmake.verify_globs;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\external\CMakeLists.txt;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\buildsupport\generate_modules_cmake_file.cmake;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\comlayersmanager.cpp.in;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\deviceExecutionHandlers.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte -BC:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild --check-stamp-file C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\CMakeFiles\cmake.verify_globs;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\external\CMakeLists.txt;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\buildsupport\generate_modules_cmake_file.cmake;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\comlayersmanager.cpp.in;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\deviceExecutionHandlers.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte -BC:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild --check-stamp-file C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\CMakeFiles\cmake.verify_globs;C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\external\CMakeLists.txt;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\buildsupport\generate_modules_cmake_file.cmake;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\cominfra\comlayersmanager.cpp.in;C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\core\deviceExecutionHandlers.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_thread.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_sem.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_sync.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_architecture.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_architecture_time.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\winforte_printer.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\genforte_realFunctions.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_instance.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\win32socketinterf.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\fdselecthand.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\mainparam_utils.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\timerha.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\devlog.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\basecommfb.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\commfb.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\comlayer.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\comlayersmanager.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\ipcomlayer.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\fbdkasn1layer.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\localcomlayer.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\rawdatacomlayer.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_any_elementary.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_int.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_sint.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_dint.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_udint.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_uint.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_usint.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_dword.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_word.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_byte.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_bool.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_string.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_time.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_any.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_any_string.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_any_num.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_any_magnitude.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_any_bit.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_any_int.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_any_real.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_struct.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_lint.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_ulint.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_time_of_day.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_date_and_time.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_any_date.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_date.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_lword.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_real.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_lreal.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_array.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_wstring.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\unicode_utils.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\string_utils.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\parameterParser.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\configFileParser.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\ecetFactory.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\conn.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\dataconn.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\eventconn.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\simplefb.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\basicfb.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\cfb.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\device.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\devexec.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\extevhan.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\funcbloc.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\fbcontainer.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\if2indco.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\resource.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\stringdict.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\typelib.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\ecet.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\adapterconn.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\adapter.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\anyadapter.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\iec61131_functions.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\deviceExecutionHandlers.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\monitoring.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_RS.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_SR.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_CTD_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_CTD_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_CTD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_CTUD_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_CTU_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_CTU.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_CTU_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_CTUD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_CTD_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_CTD_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_CTU_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_CTU_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_CTUD_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_CTUD_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_F_TRIG.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_R_TRIG.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_TOF.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_TON.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_TP.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BOOL_TO_BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BOOL_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BOOL_TO_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BOOL_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BOOL_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BOOL_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BOOL_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BOOL_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BOOL_TO_WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BOOL_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BOOL_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BOOL_TO_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BOOL_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BOOL_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BYTE_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BYTE_TO_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BYTE_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BYTE_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BYTE_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BYTE_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BYTE_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BYTE_TO_WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BYTE_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BYTE_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BYTE_TO_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BYTE_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BYTE_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DINT_TO_BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DINT_TO_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DINT_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DINT_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DINT_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DINT_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DINT_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DINT_TO_WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DINT_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DINT_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DINT_TO_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DINT_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DINT_TO_REAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DINT_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DINT_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DWORD_TO_BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DWORD_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DWORD_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DWORD_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DWORD_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DWORD_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DWORD_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DWORD_TO_WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DWORD_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DWORD_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DWORD_TO_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DWORD_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DWORD_TO_REAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DWORD_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INT_TO_BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INT_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INT_TO_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INT_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INT_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INT_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INT_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INT_TO_WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INT_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INT_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INT_TO_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INT_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INT_TO_REAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INT_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INT_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SINT_TO_BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SINT_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SINT_TO_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SINT_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SINT_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SINT_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SINT_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SINT_TO_WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SINT_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SINT_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SINT_TO_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SINT_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SINT_TO_REAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SINT_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SINT_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_BOOL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_TIME.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_REAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_STRING_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TIME_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TIME_IN_S_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TIME_IN_MS_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TIME_IN_US_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TIME_IN_NS_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TIME_IN_S_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TIME_IN_MS_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TIME_IN_US_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TIME_IN_NS_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TIME_IN_S_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TIME_IN_MS_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TIME_IN_US_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TIME_IN_NS_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TIME_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UDINT_TO_BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UDINT_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UDINT_TO_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UDINT_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UDINT_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UDINT_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UDINT_TO_WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UDINT_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UDINT_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UDINT_TO_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UDINT_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UDINT_TO_REAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UDINT_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UDINT_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_REAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_REAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WORD_TO_BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WORD_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WORD_TO_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WORD_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WORD_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WORD_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WORD_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WORD_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WORD_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WORD_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WORD_TO_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WORD_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WORD_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_BYTE_BCD_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WORD_BCD_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DWORD_BCD_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_USINT_TO_BCD_BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UINT_TO_BCD_WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_UDINT_TO_BCD_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LWORD_BCD_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_BCD_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_BOOL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_TIME.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_REAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_WSTRING_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_REAL_TO_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_REAL_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_REAL_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_REAL_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_REAL_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_REAL_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_REAL_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_REAL_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_REAL_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_REAL_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_REAL_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_REAL_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LREAL_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LREAL_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LREAL_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LREAL_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LREAL_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LREAL_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LREAL_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LREAL_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LREAL_TO_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LREAL_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LREAL_TO_REAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LREAL_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_REAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ULINT_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LWORD_TO_BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LWORD_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LWORD_TO_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LWORD_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LWORD_TO_LINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LWORD_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LWORD_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LWORD_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LWORD_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LWORD_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LWORD_TO_WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LWORD_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LWORD_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LWORD_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LINT_TO_BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LINT_TO_DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LINT_TO_DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LINT_TO_INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LINT_TO_SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LINT_TO_UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LINT_TO_UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LINT_TO_USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LINT_TO_WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LINT_TO_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LINT_TO_LWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LINT_TO_ULINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LINT_TO_REAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LINT_TO_LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LINT_TO_WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DT_TO_TOD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DT_TO_DATE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ABS.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SQRT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LN.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LOG.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SIN.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_COS.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TAN.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ASIN.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ACOS.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ATAN.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_EXP.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_AND.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_NOT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_OR.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_XOR.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\genbitbase.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_AND.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_OR.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_XOR.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SHL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SHR.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ROR.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ROL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LIMIT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_MIN.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_MAX.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SEL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_MUX_2.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_GT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_EQ.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_GE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_NE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ADD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SUB.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_MUL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DIV.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_MOD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_EXPT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_MOVE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_MULTIME.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DIVTIME.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_ADD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_TRUNC.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ADD_DT_TIME.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_ADD_TOD_TIME.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SUB_DT_TIME.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SUB_TOD_TIME.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SUB_DT_DT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SUB_DATE_DATE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_SUB_TOD_TOD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LEN.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_LEFT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_RIGHT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_MID.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_CONCAT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_INSERT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_DELETE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_REPLACE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_FIND.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\F_CONCAT_DATE_TOD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\BOOL2BOOL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\BYTE2BYTE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\DINT2DINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\DWORD2DWORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\INT2INT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\SINT2SINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\STRING2STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\TIME2TIME.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\UINT2UINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\UDINT2UDINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\USINT2USINT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\WORD2WORD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\WSTRING2WSTRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_STRUCT_MUX.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_STRUCT_DEMUX.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\REAL2REAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\LREAL2LREAL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\EC_KILL_ELEM.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\EC_SET_EVT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\EC_START_ELEM.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\EC_STOP_ELEM.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\ST_CREATE_CONN.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\ST_CREATE_FB.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\ST_DEL_CONN.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\ST_DEL_FB.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\ST_REC_CONN.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\ST_SET_PARM.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_STOPWATCH.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\OUT_ANY_CONSOLE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_F_MUX.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_CSV_WRITER.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_APPEND_STRING.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_ARRAY2VALUES.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_VALUES2ARRAY.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_ARRAY2ARRAY.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GET_AT_INDEX.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\SET_AT_INDEX.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_RANDOM.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GET_STRUCT_VALUE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\STEST_END.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\TEST_CONDITION.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\KafkaComLayer.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\fbdkSelectLayer.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\KafkaHandler.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\Bunker.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\Camera.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\ContentFilter.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\FB_Detect_VarChange.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forte_spinner.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\Vibrator.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\timedfb.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_CTU.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_CTD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_CTUD.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_DELAY.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_D_FF.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_MERGE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_REND.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_RS.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_SELECT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_SR.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_CYCLE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_DEMUX.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_F_TRIG.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_PERMIT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_RDELAY.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_RESTART.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_R_TRIG.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_SPLIT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_SWITCH.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_E_DEMUX.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_E_MUX.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\ATimeOut.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_TimeOut.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\ARTimeOut.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_RTimeOut.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_T_FF.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\E_TRAIN.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\DEV_MGR.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\EMB_RES.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\RMT_DEV.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\RMT_RES.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\ForteBootFileLoader.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_CLIENT.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_PUBLISH.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_SERVER.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_SUBSCRIBE.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_PUBL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\GEN_SUBL.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\stringlist.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\forteinit.obj" />
+    <Object Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\$(Configuration)\pctimeha.obj" />
+    <ClCompile Include="C:\FORTE_dev\forte-sourcecode\org.eclipse.4diac.forte\src\arch\win32\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\ZERO_CHECK.proj">
+      <Project>{71AD627B-C68A-32BA-AB20-1E2ADA2F4D77}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.vcxproj">
+      <Project>{F286A2BE-8A65-3114-B2E3-D79BB60F7547}</Project>
+      <Name>FORTE_LITE</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\forte_stringlist_externals.vcxproj">
+      <Project>{63B72ABB-B0BF-3CE1-BEF6-E1311252F655}</Project>
+      <Name>forte_stringlist_externals</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

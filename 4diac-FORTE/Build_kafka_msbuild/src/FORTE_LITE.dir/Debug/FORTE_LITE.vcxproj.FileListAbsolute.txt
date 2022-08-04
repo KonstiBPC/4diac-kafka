@@ -1,0 +1,1 @@
+C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\FORTE_LITE.dir\Debug\FORTE_LITE.lib

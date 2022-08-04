@@ -1,0 +1,10 @@
+^C:\FORTE_DEV\FORTE-SOURCECODE\ORG.ECLIPSE.4DIAC.FORTE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/FORTE_dev/forte-sourcecode/org.eclipse.4diac.forte -BC:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild --check-stamp-file C:/FORTE_dev/forte-sourcecode/build/Build_kafka_msbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

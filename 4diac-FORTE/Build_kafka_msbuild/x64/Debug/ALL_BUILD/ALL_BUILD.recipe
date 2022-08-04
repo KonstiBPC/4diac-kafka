@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\x64\Debug\forte_generate_modules_cmake_files</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\x64\Debug\forte_init_generator</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\x64\Debug\forte_stringlist_generator</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\src\Debug\forte.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\x64\Debug\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs>
+    <NonRecipeFileRef>
+      <FullPath>C:\FORTE_dev\forte-sourcecode\build\Build_kafka_msbuild\ZERO_CHECK.proj</FullPath>
+    </NonRecipeFileRef>
+  </NonRecipeFileRefs>
+</Project>
