@@ -4,4 +4,6 @@ This repository is for [ECSA 2022](https://conf.researchr.org/track/ecsa-2022/ec
 Demo Video [Link](https://www.youtube.com/watch?v=j3Gbk1BhMzE)
 
 ## In order to run this code
-
+1. Install of 4diac IDE as per [documention](https://www.eclipse.org/4diac/en_help.php?helppage=html/installation/install.html#4DIAC-IDE)
+2. Install of 4diac FORTE as per [documention](https://www.eclipse.org/4diac/en_help.php?helppage=html/installation/install.html#4DIAC-FORTE) 
+3. Build Apache Kafka client C++ library [librdkafka](https://github.com/edenhill/librdkafka)
