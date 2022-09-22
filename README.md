@@ -6,4 +6,5 @@ Demo Video [Link](https://www.youtube.com/watch?v=j3Gbk1BhMzE)
 ## In order to run this code
 1. Install of 4diac IDE as per [documention](https://www.eclipse.org/4diac/en_help.php?helppage=html/installation/install.html#4DIAC-IDE)
 2. Install of 4diac FORTE as per [documention](https://www.eclipse.org/4diac/en_help.php?helppage=html/installation/install.html#4DIAC-FORTE) 
+3. Create forte.exe with Apache Kafka network layer as [external module](https://www.eclipse.org/4diac/en_help.php?helppage=html/installation/install.html#externalModules)
 3. Build Apache Kafka client C++ library [librdkafka](https://github.com/edenhill/librdkafka)
